@@ -4,6 +4,8 @@ import Home from './views/Home.vue';
 import Development from './views/Development.vue';
 import Articles from './views/Articles.vue';
 import UberconfBad from './views/articles/UberconfBad.vue';
+import UberconfGood from './views/articles/UberconfGood.vue';
+import FireEmblemThreeHouses from './views/articles/FireEmblemThreeHouses.vue';
 
 Vue.use(Router);
 
@@ -42,6 +44,16 @@ export default new Router({
       path: '/articles/uber-conf-bad',
       name: 'uber-conf-bad',
       component: UberconfBad
+    },
+    {
+      path: '/articles/uber-conf-good',
+      name: 'uber-conf-good',
+      component: UberconfGood
+    },
+    {
+      path:'/articles/fire-emblem-three-houses',
+      name: 'fire-emblem-three-houses',
+      component: FireEmblemThreeHouses
     }
   ]
 });

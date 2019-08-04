@@ -20,11 +20,17 @@ export default Vue.extend({
         {
           title: "10 reasons why Uberconf is a waste of money", 
           description: "A scathing review about the inexperience and drastic disparity involved in a conference that is a lot younger than they'd like you to believe", 
-          linkUrl: "/articles/uber-conf-bad"},
+          linkUrl: "/articles/uber-conf-bad"
+        },
         {
           title: "10 reasons why you should send your developers to Uberconf", 
           description: "A glowing review about the life lessons and helpful insights gained from attending a professional conference", 
           linkUrl: "/articles/uber-conf-good"
+        },
+        {
+          title: "Fire Emblem: Three Houses Impressions",
+          description: "Impressions about the game so far, from a fan of the series",
+          linkUrl: "/articles/fire-emblem-three-houses"
         }
       ]
     }
