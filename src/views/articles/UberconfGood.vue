@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <h1>Ubeconf Bad!</h1>
+  <v-container class="max-width">
+    <h1>Uberconf Good!</h1>
     <hr/>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet lacus nec augue auctor scelerisque. Aliquam erat volutpat. Vestibulum dapibus mi eros, non dictum dolor vulputate sit amet. Proin eget ex in ligula venenatis iaculis. Nam pellentesque diam consectetur, venenatis mauris eget, pellentesque velit. Donec euismod ex nec nibh bibendum, auctor semper mauris blandit. Etiam vel viverra sapien, a tempus risus.</p>
 
@@ -14,3 +14,9 @@
     <hr/>
   </v-container>
 </template>
+
+<style>
+  .max-width{
+    max-width: 850px;
+  }
+</style>

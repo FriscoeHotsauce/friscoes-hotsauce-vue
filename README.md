@@ -1,5 +1,9 @@
 # friscoes-hotsauce-vue
 
+## Description
+
+The purpose of this project is to demonstrate my understand of Vue.js while hopefully providing some well designed content that reflects my interests.
+
 ## Project setup
 ```
 npm install
@@ -24,6 +28,3 @@ npm run test
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,42 +1,44 @@
 <template>
-  <v-layout align-center>
-    <v-item-group v-model="window" class="shrink mr-6" mandatory tag="v-flex">
-      <v-item v-for="section in sections" :key="section.title" v-slot:default="{active, toggle}">
-        <div>
-          <v-btn :input-value="active" icon @click="toggle">
-            <!-- <v-icon>mdi-record</v-icon> -->
-            <span>{{section.title | FirstLetter}}</span>
-          </v-btn>
-        </div>
-      </v-item>
-    </v-item-group>
+  <v-container class="max-width" align-center justify-center>
+    <v-layout>
+      <v-item-group v-model="window" class="shrink mr-6" mandatory tag="v-flex">
+        <v-item v-for="section in sections" :key="section.title" v-slot:default="{active, toggle}">
+          <div>
+            <v-btn :input-value="active" icon @click="toggle">
+              <!-- <v-icon>mdi-record</v-icon> -->
+              <span>{{section.title | FirstLetter}}</span>
+            </v-btn>
+          </div>
+        </v-item>
+      </v-item-group>
 
-    <v-flex>
-      <v-window v-model="window" class="elevation-1" vertical>
-        <v-window-item v-for="section in sections" :key="section.title">
-          <v-card flat>
-            <v-card-text>
-              <v-layout align-center mb-4>
-                <v-avatar color="grey" class="mr-4"></v-avatar>
-                <strong class="title">{{ section.title }}</strong>
-                <v-spacer></v-spacer>
-                <v-btn icon>
-                  <v-icon>mdi-account</v-icon>
-                </v-btn>
-              </v-layout>
-              <hr />
-              <p
-                v-for="paragraph in section.paragraphs"
-                :key="paragraph"
-                class="margin"
-              >{{ paragraph }}</p>
-              <hr />
-            </v-card-text>
-          </v-card>
-        </v-window-item>
-      </v-window>
-    </v-flex>
-  </v-layout>
+      <v-flex>
+        <v-window v-model="window" class="elevation-1" vertical>
+          <v-window-item v-for="section in sections" :key="section.title">
+            <v-card flat>
+              <v-card-text>
+                <v-layout align-center mb-4>
+                  <v-avatar color="grey" class="mr-4"></v-avatar>
+                  <strong class="title">{{ section.title }}</strong>
+                  <v-spacer></v-spacer>
+                  <v-btn icon>
+                    <v-icon>mdi-account</v-icon>
+                  </v-btn>
+                </v-layout>
+                <hr />
+                <p
+                  v-for="paragraph in section.paragraphs"
+                  :key="paragraph"
+                  class="margin"
+                >{{ paragraph }}</p>
+                <hr />
+              </v-card-text>
+            </v-card>
+          </v-window-item>
+        </v-window>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <style>
@@ -46,6 +48,10 @@
   margin-right: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.max-width{
+  max-width: 850px;
 }
 </style>
 
