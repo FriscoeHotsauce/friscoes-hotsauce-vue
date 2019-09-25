@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import About from './views/About.vue';
 import Development from './views/Development.vue';
 import Articles from './views/Articles.vue';
 import UberconfBad from './views/articles/UberconfBad.vue';
 import UberconfGood from './views/articles/UberconfGood.vue';
-import FireEmblemThreeHouses from './views/articles/FireEmblemThreeHouses.vue';
+import ExampleArticle from './views/articles/ExampleArticle.vue';
 
 Vue.use(Router);
 
@@ -19,11 +20,7 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: About
     },
     {
       path: '/home',
@@ -51,9 +48,9 @@ export default new Router({
       component: UberconfGood
     },
     {
-      path:'/articles/fire-emblem-three-houses',
-      name: 'fire-emblem-three-houses',
-      component: FireEmblemThreeHouses
+      path: '/articles/example-article',
+      name: 'example-article',
+      component: ExampleArticle
     }
   ]
 });

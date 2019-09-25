@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card height="250px">
   <v-card-title primary-title>
     <h3>{{ title }}</h3>
   </v-card-title>

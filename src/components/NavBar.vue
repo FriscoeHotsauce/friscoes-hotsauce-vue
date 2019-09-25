@@ -7,7 +7,7 @@
       <v-btn flat to ="/articles">Articles</v-btn>
       <v-btn flat> 
         <div>Resume</div>
-        <div><sub>coming soon!</sub></div>
+        <div><sub>&nbsp; (coming soon!)</sub></div>
       </v-btn>
     </v-toolbar-items>
   </v-toolbar>

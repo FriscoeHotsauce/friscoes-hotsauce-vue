@@ -77,6 +77,11 @@ export default Vue.extend({
             "Previous games, in particular the first title, had a reputation of being rather tough and I usually played through them on the Normal difficulty; a healthy challenge in the older games. One of the first things I noticed about Three Houses is that the game is not particularly challenging. I never really had a problem with the battles, and for the first dozen hours or so just chalked it up to being eased into the game. I quickly realized though, that it wasn’t an accident, within a few missions my units were sprinting down the battlefield, clearing enemies with ease.",
             "Simply put, I was not having fun, and decided to restart the game on the Hard difficulty;  I mention this because it really affected my enjoyment of the game in a positive way. Missions on Hard are time gated so you can’t repeat them, strengths and weaknesses between units have been sharpened, and I actually had some tense nail-biting moments where I couldn’t keep an ally alive, or I barely saved one of my units. If you have experience with the franchise, or you’ve played games like XCOM, I would recommend starting on the Hard difficulty. You can turn the difficulty down if it’s too much, but you can’t turn the difficulty up if you’re not feeling challenged."
           ]
+        }, {
+          title:"Story",
+          paragraphs: [
+
+          ]
         }
       ]
     };

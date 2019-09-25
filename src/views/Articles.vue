@@ -1,12 +1,11 @@
 <template>
   <v-container grid-list-md>
-  <v-layout row wrap>
-    <v-flex xs3 v-for="article in things" :key='article.title'>
-      <ArticleCard :title='article.title' :description='article.description' :linkUrl='article.linkUrl' />
-    </v-flex>
-  </v-layout>
-</v-container>
-
+    <v-layout row wrap>
+      <v-flex xs3 v-for="article in things" :key='article.title'>
+        <ArticleCard :title='article.title' :description='article.description' :linkUrl='article.linkUrl' />
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script lang="ts">
@@ -28,9 +27,9 @@ export default Vue.extend({
           linkUrl: "/articles/uber-conf-good"
         },
         {
-          title: "Fire Emblem: Three Houses Impressions",
-          description: "Impressions about the game so far, from a fan of the series",
-          linkUrl: "/articles/fire-emblem-three-houses"
+          title: "Example Article",
+          description: "Showing off some cool things you can do with Vue",
+          linkUrl: "/articles/example-article"
         }
       ]
     }

@@ -1,6 +1,7 @@
 <template>
   <v-container>
-    <h1>'Sup</h1>
+    <h1>Welcome!</h1>
+    
   </v-container>
 </template>
 
