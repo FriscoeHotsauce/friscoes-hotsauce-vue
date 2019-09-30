@@ -1,32 +1,6 @@
 <template>
 <v-container grid-list-md>
   <v-layout row wrap>
-    <!-- <v-flex xs6>
-      <h1>Work Projects</h1>
-      <hr/>
-        <div class="spacer">
-          <ul>
-            <li>Retired legacy duplication microservice</li>
-            <li>Retired legacy lead ingestion microservice</li>
-            <li>Developed green-field underwriting tool for sales agents</li>
-            <li>Maintaned customer management application</li>
-          </ul>
-        </div>
-      <hr/>
-    </v-flex>
-    
-    <v-flex xs6>
-      <h1>Personal Projects</h1>
-      <hr/>
-        <div class="spacer">
-          <ul>
-            <li>This website!: I used this site to teach myself Vue.js</li>
-            <li>AWS hosting: this site is hosted through Amazon Web Services</li>
-            <li>Heroes - Tower Defense: A unity game I am creating for fun</li>
-          </ul>
-        </div>
-      <hr/>
-    </v-flex> -->
     <v-flex xs5>
       <h2>Languages</h2>
       <br/>
