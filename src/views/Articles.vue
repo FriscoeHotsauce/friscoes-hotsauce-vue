@@ -38,10 +38,10 @@ export default Vue.extend({
           linkUrl: "/articles/example-article"
         },
         {
-          title: "Tyler's Tastings",
+          title: "Tyler & Jolene's Whisk(e)y Tastings",
           description:
             "A Whisk(e)y guide for a friend's wedding, including details about each sample.",
-          linkUrl: "/tylers-tasting"
+          linkUrl: "/tasting"
         }
       ]
     };
