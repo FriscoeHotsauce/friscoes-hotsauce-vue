@@ -179,7 +179,7 @@
 }
 
 .max-width {
-  max-width: 850px;
+  max-width: 90%;
   min-width: 700px;
 }
 
