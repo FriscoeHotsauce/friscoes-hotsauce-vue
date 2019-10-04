@@ -54,8 +54,8 @@ export default new Router({
       component: ExampleArticle
     },
     {
-      path: "/tylers-tasting",
-      name: "tylers-tasting",
+      path: "/tasting",
+      name: "tasting",
       component: TylersTasting
     }
   ]
