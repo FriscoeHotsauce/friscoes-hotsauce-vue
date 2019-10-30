@@ -79,7 +79,7 @@
             </v-layout>
           </v-container>
         </v-flex>
-        <v-flex xs5>
+        <v-flex xs12 md5>
           <h2>Box One</h2>
           <br />
           <v-expansion-panel>
@@ -110,7 +110,7 @@
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-flex>
-        <v-flex xs5 offset-xs1>
+        <v-flex xs12 md5 offset-md1>
           <h2>Box Two</h2>
           <br />
           <v-expansion-panel>
@@ -180,11 +180,11 @@
 
 .max-width {
   max-width: 90%;
-  min-width: 700px;
+  min-width: 70%;
 }
 
 .height-normalizer {
-  height: 230px;
+  min-height: 230px;
 }
 
 .intro-boomer {

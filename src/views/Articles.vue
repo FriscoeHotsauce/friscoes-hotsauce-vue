@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md>
     <v-layout row wrap>
-      <v-flex xs3 v-for="article in things" :key="article.title">
+      <v-flex xs12 sm6 md3 v-for="article in things" :key="article.title">
         <ArticleCard
           :title="article.title"
           :description="article.description"

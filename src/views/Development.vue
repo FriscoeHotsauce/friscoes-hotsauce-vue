@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md>
     <v-layout row wrap>
-      <v-flex xs5>
+      <v-flex xs11 md5>
         <h2>Languages</h2>
         <br />
         <v-expansion-panel expand inset>
@@ -17,10 +17,10 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-flex>
-      <v-flex xs1>
+      <v-flex xs1 md1>
         <!-- spacing -->
       </v-flex>
-      <v-flex xs5>
+      <v-flex xs11 md5>
         <h2>Frameworks</h2>
         <br />
         <v-expansion-panel expand inset>
@@ -36,10 +36,10 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-flex>
-      <v-flex xs1>
+      <v-flex xs1 md1>
         <!-- spacing -->
       </v-flex>
-      <v-flex xs5>
+      <v-flex xs11 md5>
         <br />
         <h2>Build and Source Tools</h2>
         <br />
@@ -56,10 +56,10 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-flex>
-      <v-flex xs1>
+      <v-flex xs1 md1>
         <!-- spacing -->
       </v-flex>
-      <v-flex xs5>
+      <v-flex xs11 md5>
         <br />
         <h2>Diagnostic Tools</h2>
         <br />
@@ -76,7 +76,7 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-flex>
-      <v-flex xs1>
+      <v-flex xs1 md1>
         <!-- spacing -->
       </v-flex>
     </v-layout>

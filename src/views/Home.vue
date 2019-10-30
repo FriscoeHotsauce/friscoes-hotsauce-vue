@@ -24,7 +24,7 @@
       </v-card-title>
       <v-container grid-list-md>
         <v-layout row wrap>
-          <v-flex xs3>
+          <v-flex xs6 md3>
             <v-card>
               <v-card-title>
                 <h3>link one</h3>
@@ -36,7 +36,7 @@
               </v-card-text>
             </v-card>
           </v-flex>
-          <v-flex xs3>
+          <v-flex xs6 md3>
             <v-card>
               <v-card-title>
                 <h3>link two</h3>
@@ -48,7 +48,7 @@
               </v-card-text>
             </v-card>
           </v-flex>
-          <v-flex xs3>
+          <v-flex xs6 md3>
             <v-card>
               <v-card-title>
                 <h3>link three</h3>
@@ -60,7 +60,7 @@
               </v-card-text>
             </v-card>
           </v-flex>
-          <v-flex xs3>
+          <v-flex xs6 md3>
             <v-card>
               <v-card-title>
                 <h3>link four</h3>
