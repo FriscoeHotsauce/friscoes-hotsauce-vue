@@ -31,7 +31,7 @@ export default Vue.extend({
       linkItems: [
         { title: "Home", route: "/home" },
         { title: "About", route: "/about" },
-        { title: "Development", route: "/dev" },
+        { title: "Development", route: "/development" },
         { title: "Articles", route: "/articles" }
         //{ title: "Resume", route: "" }
       ]
@@ -51,7 +51,7 @@ export default Vue.extend({
           });
           result.push({
             text: item.charAt(0).toUpperCase() + item.slice(1),
-            disabled: index == pathArray.length - 1,
+            disabled: index == pathArray.length - 1, //disable breadcrumb for the current page
             href: route
           });
         }

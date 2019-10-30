@@ -1,23 +1,25 @@
 <template>
   <v-app>
-    <NavBar/>
+    <NavBar />
     <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import Home from './views/Home'
-import NavBar from './components/NavBar'
+import Home from "./views/Home";
+import Vuetify from "vuetify/lib";
+import NavBar from "./components/NavBar";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Home, NavBar
+    Home,
+    NavBar
   },
-  data () {
+  data() {
     return {
       //
-    }
+    };
   }
-}
+};
 </script>
