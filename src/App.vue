@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import Vue from "vue";
 import Home from "./views/Home";
 import Vuetify from "vuetify/lib";
 import NavBar from "./components/NavBar";
@@ -13,7 +14,6 @@ import NavBar from "./components/NavBar";
 export default {
   name: "App",
   components: {
-    Home,
     NavBar
   },
   data() {
