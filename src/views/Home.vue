@@ -27,47 +27,18 @@
           <v-flex xs6 md3>
             <v-card>
               <v-card-title>
-                <h3>link one</h3>
+                <h2>Github</h2>
               </v-card-title>
               <v-card-text>
                 <div>
-                  <p>link two description</p>
+                  <p>Check out the projects I've been working on</p>
                 </div>
-              </v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex xs6 md3>
-            <v-card>
-              <v-card-title>
-                <h3>link two</h3>
-              </v-card-title>
-              <v-card-text>
                 <div>
-                  <p>link two description</p>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex xs6 md3>
-            <v-card>
-              <v-card-title>
-                <h3>link three</h3>
-              </v-card-title>
-              <v-card-text>
-                <div>
-                  <p>link three description</p>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex xs6 md3>
-            <v-card>
-              <v-card-title>
-                <h3>link four</h3>
-              </v-card-title>
-              <v-card-text>
-                <div>
-                  <p>link four description</p>
+                  <v-btn
+                    href="https://github.com/FriscoeHotsauce"
+                    target="_blank"
+                    outlined
+                  >Check it out</v-btn>
                 </div>
               </v-card-text>
             </v-card>
@@ -79,6 +50,7 @@
 </template>
 
 <script>
+import Vue from "vue";
 export default {
   name: "Home"
 };

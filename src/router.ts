@@ -57,6 +57,7 @@ export default new Router({
       path: '/tasting',
       name: 'tasting',
       component: TylersTasting
-    }
+    },
+
   ]
 });
