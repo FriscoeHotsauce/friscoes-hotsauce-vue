@@ -24,24 +24,8 @@
       </v-card-title>
       <v-container grid-list-md>
         <v-layout row wrap>
-          <v-flex xs6 md3>
-            <v-card>
-              <v-card-title>
-                <h2>Github</h2>
-              </v-card-title>
-              <v-card-text>
-                <div>
-                  <p>Check out the projects I've been working on</p>
-                </div>
-                <div>
-                  <v-btn
-                    href="https://github.com/FriscoeHotsauce"
-                    target="_blank"
-                    outlined
-                  >Check it out</v-btn>
-                </div>
-              </v-card-text>
-            </v-card>
+          <v-flex xs6 md3 v-for="link in links" :key="link.title">
+            <QuickLink :title="link.title" :description="link.description" :linkUrl="link.linkUrl" />
           </v-flex>
         </v-layout>
       </v-container>
@@ -51,8 +35,28 @@
 
 <script>
 import Vue from "vue";
+import QuickLink from "../components/QuickLink.vue";
 export default {
-  name: "Home"
+  name: "Home",
+  data: function() {
+    return {
+      links: [
+        {
+          title: "Github",
+          description: "Check out my projects",
+          linkUrl: "https://github.com/FriscoeHotsauce"
+        },
+        {
+          title: "LinkedIn",
+          description: "Check out my professional profile",
+          linkUrl: "https://www.linkedin.com/in/ian-harris-02384182/"
+        }
+      ]
+    };
+  },
+  components: {
+    QuickLink
+  }
 };
 </script>
 
