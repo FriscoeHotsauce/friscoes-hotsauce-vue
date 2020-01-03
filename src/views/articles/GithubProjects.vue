@@ -10,6 +10,9 @@
         <v-btn text flat small color="error" @click="closeErrors()">close</v-btn>
       </div>
     </div>
+    <div v-if="loading">
+      <v-progress-circular indeterminate color="primary"></v-progress-circular>
+    </div>
     <v-layout row wrap>
       <v-flex md12 v-for="project in results" :key="project.linkUrl" class="spacer">
         <GithubProjectSummary
@@ -37,6 +40,7 @@ export default Vue.extend({
       languages: [] as string[],
       errorMessage: "" as string,
       displayError: false,
+      loading: false,
       descriptionText:
         "A quick demonstration using the AXIOS rest client to pull the most popular Github projects by language."
     };
@@ -62,6 +66,8 @@ export default Vue.extend({
     findReposByLanguage: function(language: string) {
       //some languages use special characters (i.e. C#); encode them with AXIOS so the URI works correctly
       let encodedLanguage: string = encodeURIComponent(language);
+      this.results = [] as GithubSummary[]; //clear the results set so the loading spinner is the only thing on screen
+      this.loading = true;
       axios
         .get(
           "https://api.github.com/search/repositories?q=language:" +
@@ -87,17 +93,18 @@ export default Vue.extend({
             this.displayError = false;
           } else {
             //Display a message if there are no results; github recognizes some languages that don't have any repositories (or public repositories anyway)
-            this.results = [] as GithubSummary[];
             this.errorMessage = "No results returned for language " + language;
             this.displayError = true;
           }
         })
         .catch(error => {
-          this.results = [] as GithubSummary[]; //clear the results set
           this.errorMessage =
             "An error occurred pulling repositories for the language " +
             language;
           this.displayError = true;
+        })
+        .finally(() => {
+          this.loading = false;
         });
     },
     closeErrors: function() {
