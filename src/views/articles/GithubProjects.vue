@@ -2,7 +2,6 @@
   <v-container>
     <h1>Github Repo Search</h1>
     <div>{{ descriptionText }}</div>
-    <!-- <p>{{ languages }}</p> -->
     <v-autocomplete :items="languages" label="Languages" @change="findReposByLanguage"></v-autocomplete>
     <div v-if="displayError">
       {{ errorMessage }}
