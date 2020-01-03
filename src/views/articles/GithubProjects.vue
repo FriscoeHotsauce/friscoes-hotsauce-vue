@@ -78,8 +78,8 @@ export default Vue.extend({
             "&sort=stars&order=desc"
         )
         .then(response => {
+          //if we have results...
           if (response.data.items.length && response.data.items.length != 0) {
-            //if we have results...
             this.results = response.data.items
               .slice(0, 5) //grab the first 5 items, pre-sorted
               .map((repo: any, index: number) => {
@@ -115,6 +115,7 @@ export default Vue.extend({
   }
 });
 
+//A helper interface to uniformly map items we want to display
 interface GithubSummary {
   ranking: number;
   projectName: string;
