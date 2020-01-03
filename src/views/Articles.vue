@@ -42,6 +42,12 @@ export default Vue.extend({
           description:
             "A Whisk(e)y guide for a friend's wedding, including details about each sample.",
           linkUrl: "/tasting"
+        },
+        {
+          title: "Github Repo Search",
+          description:
+            "A brief coding challenge using the AXIOS rest client to pull the most popular projects from Github by language.",
+          linkUrl: "/articles/github-projects"
         }
       ]
     };

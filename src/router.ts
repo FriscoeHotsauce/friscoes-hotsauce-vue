@@ -8,6 +8,7 @@ import UberconfBad from './views/articles/UberconfBad.vue';
 import UberconfGood from './views/articles/UberconfGood.vue';
 import ExampleArticle from './views/articles/ExampleArticle.vue';
 import TylersTasting from './views/TylersTasting.vue';
+import GithubProjects from './views/articles/GithubProjects.vue';
 
 Vue.use(Router);
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/articles/example-article',
       name: 'example-article',
       component: ExampleArticle
+    },
+    {
+      path: '/articles/github-projects',
+      name: 'github-projects',
+      component: GithubProjects
     },
     {
       path: '/tasting',
