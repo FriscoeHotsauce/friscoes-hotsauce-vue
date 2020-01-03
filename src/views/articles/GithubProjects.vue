@@ -66,8 +66,11 @@ export default Vue.extend({
     findReposByLanguage: function(language: string) {
       //some languages use special characters (i.e. C#); encode them with AXIOS so the URI works correctly
       let encodedLanguage: string = encodeURIComponent(language);
-      this.results = [] as GithubSummary[]; //clear the results set so the loading spinner is the only thing on screen
+      //clear the results area so the loading spinner is the only thing on screen
+      this.results = [] as GithubSummary[];
+      this.displayError = false;
       this.loading = true;
+
       axios
         .get(
           "https://api.github.com/search/repositories?q=language:" +
@@ -90,7 +93,6 @@ export default Vue.extend({
                   stars: repo.stargazers_count
                 };
               });
-            this.displayError = false;
           } else {
             //Display a message if there are no results; github recognizes some languages that don't have any repositories (or public repositories anyway)
             this.errorMessage = "No results returned for language " + language;
