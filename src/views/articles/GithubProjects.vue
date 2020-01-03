@@ -14,7 +14,7 @@
       <v-progress-circular indeterminate color="primary"></v-progress-circular>
     </div>
     <v-layout row wrap>
-      <v-flex md12 v-for="project in results" :key="project.linkUrl" class="spacer">
+      <v-flex xs12 v-for="project in results" :key="project.linkUrl" class="spacer">
         <GithubProjectSummary
           :index="project.ranking"
           :name="project.projectName"
