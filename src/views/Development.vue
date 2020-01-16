@@ -111,7 +111,7 @@ export default Vue.extend({
         {
           title: "Typescript",
           content:
-            "The more stable sibling of Javascript, TS has a house, a spouse and some kids, and has life figured out"
+            "A more strict sibling of Javascript, I've used it during my time with Angular 8 and liked it well enough to use it whenever possible."
         },
         {
           title: "Rust",
