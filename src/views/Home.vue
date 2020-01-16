@@ -24,7 +24,7 @@
       </v-card-title>
       <v-container grid-list-md>
         <v-layout row wrap>
-          <v-flex xs6 md3 v-for="link in links" :key="link.title">
+          <v-flex xs12 sm6 md3 v-for="link in links" :key="link.title">
             <QuickLink :title="link.title" :description="link.description" :linkUrl="link.linkUrl" />
           </v-flex>
         </v-layout>
