@@ -11,12 +11,22 @@
         <br />
         <div>
           <h3>
-            Iowa State University -
-            <i>Software Development Intern</i>
+            Best Buy -
+            <i>Software Developer II</i>
           </h3>
-          <h4>February 2016 - December 2017</h4>
+          <h4>March 2020 - Present</h4>
           <br />
-          <p>&emsp;{{ iowaStateContent }}</p>
+          <p>&emsp;{{ svgTwoContent }}</p>
+        </div>
+        <br />
+        <div>
+          <h3>
+            Spring Venture Group -
+            <i>Software Engineer II</i>
+          </h3>
+          <h4>May 2019 - March 2020</h4>
+          <br />
+          <p>&emsp;{{ svgTwoContent }}</p>
         </div>
         <br />
         <div>
@@ -31,12 +41,12 @@
         <br />
         <div>
           <h3>
-            Spring Venture Group -
-            <i>Software Engineer II</i>
+            Iowa State University -
+            <i>Software Development Intern</i>
           </h3>
-          <h4>May 2019 - Present</h4>
+          <h4>February 2016 - December 2017</h4>
           <br />
-          <p>&emsp;{{ svgTwoContent }}</p>
+          <p>&emsp;{{ iowaStateContent }}</p>
         </div>
       </v-flex>
       <v-flex xs1 md1></v-flex>
@@ -89,6 +99,8 @@ export default Vue.extend({
         "Thanks to my experience at Iowa State, I was able to hit the ground running at Spring Venture group. Within a few short months, I was already tackling projects by myself, and would continue to do so for the next year and some change. The first year was a struggle of rapid change and development where the company experienced growing pains after doubling their employee count, and tripling development staff. This provided me an opportunity to stand out and take charge on several important projects, which would see me promoted in May of 2019.",
       svgTwoContent:
         "After being promoted in 2019, I continued to work on important company initiatives such as delivering a tool to help our agents underwrite clients; the first UI tool SVG had built in-house. I also continued to work on projects where I had a lot of autonomy, in particular projects that required a lot of research and design such as optimizing data syncing with Salesforce. It’s hard to say what will happen in the future, but I’m sure I’ll still be working on projects with a degree of autonomy, and continuing to work with my team to deliver more features for our UI tools.",
+      bestBuyContent:
+        "I took the position at Best Buy after searching in the Minneapolis area for several months. It has provided me with a unique opportunity to dig into new technologies, and have a lot of impact in our small team. The team has been working on a suite of tools to improve developer productivity at Best Buy. This included a project generation tool built with Yeoman to quickly bootstrap new projects, a set of automation tools built into Jenkins to get new projects into the CI/CD platform, and a robust Jenkins DSL to allow quick integration with the build tools used at Best Buy.",
       isuEducationContent:
         "My time at Iowa State was important for my growth as a human being, as college usually is. I struggled in my first few years to reach my academic goals, but that struggle allowed me to finally realize <i>how</i> to learn. I also learned a lot from the fraternity I joined, Kappa Sigma, that helped me get a realistic view of the world by interacting with so many different types of individuals. Overall, my time at ISU was a positive one that I look back on fondly, but I find myself more interested in what comes next as I eagerly await the future.",
       uberconfEducationContent:
