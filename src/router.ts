@@ -9,6 +9,7 @@ import UberconfGood from './views/articles/UberconfGood.vue';
 import ExampleArticle from './views/articles/ExampleArticle.vue';
 import TylersTasting from './views/TylersTasting.vue';
 import GithubProjects from './views/articles/GithubProjects.vue';
+import GMTK2020 from './views/articles/GMTK2020.vue';
 
 Vue.use(Router);
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/articles/github-projects',
       name: 'github-projects',
       component: GithubProjects
+    },
+    {
+      path: '/articles/GMTK2020',
+      name: 'GMTK 2020 Game Jam',
+      component: GMTK2020
     },
     {
       path: '/tasting',

@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card height="100%">
     <v-card-title>
       <h2>{{ title }}</h2>
     </v-card-title>
@@ -7,10 +7,10 @@
       <div>
         <p>{{ description }}</p>
       </div>
-      <div>
-        <v-btn :href="linkUrl" target="_blank" outlined>Check it out</v-btn>
-      </div>
     </v-card-text>
+    <v-card-actions>
+      <v-btn :href="linkUrl" target="_blank" outlined>Check it out</v-btn>
+    </v-card-actions>
   </v-card>
 </template>
 
@@ -18,6 +18,6 @@
 import Vue from "vue";
 export default Vue.extend({
   name: "QuickLink",
-  props: { title: String, description: String, linkUrl: String }
+  props: { title: String, description: String, linkUrl: String },
 });
 </script>

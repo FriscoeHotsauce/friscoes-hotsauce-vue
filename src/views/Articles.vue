@@ -17,7 +17,7 @@ import Vue from "vue";
 import ArticleCard from "../components/ArticleCard.vue";
 
 export default Vue.extend({
-  data: function() {
+  data: function () {
     return {
       things: [
         // {
@@ -41,19 +41,24 @@ export default Vue.extend({
           title: "Tyler & Jolene's Whisk(e)y Tastings",
           description:
             "A Whisk(e)y guide for a friend's wedding, including details about each sample.",
-          linkUrl: "/tasting"
+          linkUrl: "/tasting",
         },
         {
           title: "Github Repo Search",
           description:
             "A brief coding challenge using the AXIOS rest client to pull the most popular projects from Github by language.",
-          linkUrl: "/articles/github-projects"
-        }
-      ]
+          linkUrl: "/articles/github-projects",
+        },
+        {
+          title: "GMTK 2020 Game Jam",
+          description: "My submission to the GMTK 2020 Game Jam",
+          linkUrl: "/articles/GMTK2020",
+        },
+      ],
     };
   },
   components: {
-    ArticleCard
-  }
+    ArticleCard,
+  },
 });
 </script>
