@@ -31,11 +31,7 @@
       <v-container grid-list-md>
         <v-layout row wrap>
           <v-flex xs12 sm6 md3 v-for="link in links" :key="link.title">
-            <QuickLink
-              :title="link.title"
-              :description="link.description"
-              :linkUrl="link.linkUrl"
-            />
+            <QuickLink :title="link.title" :description="link.description" :linkUrl="link.linkUrl" />
           </v-flex>
         </v-layout>
       </v-container>
@@ -48,30 +44,30 @@ import Vue from "vue";
 import QuickLink from "../components/QuickLink.vue";
 export default {
   name: "Home",
-  data: function () {
+  data: function() {
     return {
       links: [
         {
           title: "Github",
-          description: "Check out my projects",
-          linkUrl: "https://github.com/FriscoeHotsauce",
+          description: "Check out the code for my projects",
+          linkUrl: "https://github.com/FriscoeHotsauce"
         },
         {
           title: "LinkedIn",
           description: "Check out my professional profile",
-          linkUrl: "https://www.linkedin.com/in/ian-harris-02384182/",
+          linkUrl: "https://www.linkedin.com/in/ian-harris-02384182/"
         },
         {
           title: "Itch.io",
           description: "Check out games I've worked on in my free time",
-          linkUrl: "https://friscoehotsauce.itch.io/",
-        },
-      ],
+          linkUrl: "https://friscoehotsauce.itch.io/"
+        }
+      ]
     };
   },
   components: {
-    QuickLink,
-  },
+    QuickLink
+  }
 };
 </script>
 
