@@ -4,7 +4,7 @@
       <v-toolbar>
         <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
           <v-btn v-for="item in linkItems" :key="item.title" :to="item.route" flat>{{ item.title }}</v-btn>
-          <v-btn href="/October2020Resume.pdf" target="_blank" flat>Resume</v-btn>
+          <v-btn href="/July2023Resume.pdf" target="_blank" flat>Resume</v-btn>
         </v-toolbar-items>
         <v-menu v-if="$vuetify.breakpoint.smAndDown">
           <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>

@@ -89,6 +89,10 @@ export default Vue.extend({
     return {
       languages: [
         {
+          title:"Kotlin",
+          content:"Our team at SVG uses Kotlin for all of our back-end projects, and it’s been a very pleasant language to use. The collection streams are a huge time saver, data classes are a huge boilerplate reducer, and the built in concurrency makes our apps more efficient."
+        },
+        {
           title: "Java",
           content:
             "The language I have the most classical training and work experience with. I've been working with Java since 2010."
@@ -136,6 +140,10 @@ export default Vue.extend({
             "This website is built using Vue! A front-end framework that is quick to put up, and offers component-level customization. I got a first taste of Vue at Uberconf, and have been a fan since. I use Vue for personal projects, and hope to find a good use case for it at work."
         },
         {
+          title:"Mockk",
+          content:"Kotlin’s mock-k testing framework is absolutely top notch. I think it’s better than Mockito and Spock. In combination with Jupiter it’s the easiest framework to set up, the mocking tools are incredibly powerful, and the syntax is a breeze."
+        },
+        {
           title: "Mockito",
           content:
             "A testing framework for Java that allows developers to mock behaviour of dependencies when writing unit tests. I got a huge dose of Mockito when I was working at Iowa State where we didn’t deploy as often, so unit tests were critical for making sure our deployments worked."
@@ -155,7 +163,7 @@ export default Vue.extend({
         {
           title: "Git",
           content:
-            "The ultimate code versioning tool. I know Git very well. I still have to look up commands from time to time, but I have taken the time to learn the Git command line, and am comfortable resolving merge conflicts without the need for visual tools like GitKraken or Sourcetree (although I am familiar with those tools)."
+            "The ultimate code versioning tool. I know Git very well. I have taken the time to learn the Git command line and am comfortable resolving merge conflicts without the need for visual tools, though I prefer IntelliJ’s merge resolution tools."
         },
         {
           title: "Docker",
@@ -163,26 +171,33 @@ export default Vue.extend({
             'The #1 choice for building containers, all of our applications at Spring Venture Group build into docker containers. Our earlier projects required a more intimate knowledge of Docker, so I picked it up in my first year or so. I’ve gone on to do some personal projects with Docker, including hosting a dedicated server for the game "Don’t Starve Together".'
         },
         {
+          title:"AWS CDK",
+          content:"Amazon’s updated replacement for Cloud Formation, our DevOps team at Spring Venture Group opened up the CDK to the development teams and I was able to provision new applications, the necessary permissions and roles, Kinesis and S3 resources for a new application I worked on."
+        },
+        {
+          title:"AWS Kinesis",
+          content:"I’ve used Kinesis in both a producer and consumer context, and provisioned the necessary resources with the AWS CDK. It’s a powerful tool, with a lot of ecosystem-specific setup, which can be challenging. I also did a proof of concept with it before the Spring Framework open source libraries caught up, and am familiar with the intricacies of Sharding and message publishing."
+        },
+        {
           title: "AWS CodePipeline",
           content:
             "Spring Venture Group moved away from Jenkins while I was working there, and instead began to use CodePipeline for its close integration with ECS (where our code is hosted)."
         },
         {
-          title: "Cloud Formation",
-          content:
-            "After SVG moved to CodePipeline, we started using Cloud Formation templates to allocate resources our applications needed, such as SQS queues, SNS topics, and defining roles and permissions those resources may need."
-        },
-        {
           title: "Jenkins",
           content:
-            "A popular open source build tool, I used jenkins at both Iowa State and Spring Venture Group. I have had limited experience adjusting build parameters and creating/editing jenkins build files."
+            "I’ve used Jenkins as a user, and have also helped develop a DSL for Jenkins at Best Buy. I’m impressed by its extensibility, but the official support leaves something to be desired. It requires significant knowledge and investment to use, but is very powerful when leveraged properly."
         }
       ],
       diagnosticTools: [
         {
+          title: "Insomnia",
+          content: "Insomnia is effectively a newer, sexier Postman. I use it to test out new endpoints locally, update configurations in staging environments, and test calls to 3rd party APIs to suss out any quirks before I begin development."
+        },
+        {
           title: "Splunk",
           content:
-            "The behemoth log aggregator, trend analyzer, system monitor, on-call delegator, and everything else. We used Splunk for all of those things at SVG. Splunk is big, slow, and powerful. But man, aren’t those dashboards pretty?"
+            "The behemoth log aggregator, trend analyzer, system monitor, on-call delegator, and everything else. We used Splunk for all of those things at SVG. Splunk is big, slow, and mighty powerful."
         },
         {
           title: "Graylog",
